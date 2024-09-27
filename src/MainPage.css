@@ -1,0 +1,11 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./images/BlueBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

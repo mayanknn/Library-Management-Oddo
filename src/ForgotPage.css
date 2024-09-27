@@ -1,0 +1,94 @@
+
+  /* ForgotPage Component Styles */
+
+  .forgot-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #333; */
+    background-image: url(images/BlueBg.jpg);
+
+  }
+  .Forgot_Page {
+    height: 35vh;
+   
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   
+    border-radius: 1rem;
+   
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+  }
+  
+  .span_1 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .Forgot_Page input {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(51, 88, 209, 0.3), 0 8px 16px rgba(21, 63, 191, 0.35);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .Forgot_Page input:focus {
+    border-color: rgba(21, 63, 191, 0.7);
+    box-shadow: 0 0 10px rgba(21, 63, 191, 0.5);
+  }
+  
+  .Forgot_Page button {
+    background-color: rgb(16, 27, 227);
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .Forgot_Page button:hover {
+    background-color: rgb(11, 161, 211);
+    transform: scale(1.05);
+  }
+  
+  .span_2 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .span_2 a {
+    color: rgb(16, 27, 227);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .span_2 a:hover {
+    color: rgb(11, 161, 211);
+  }
+  

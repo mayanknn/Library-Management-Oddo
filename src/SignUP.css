@@ -1,0 +1,126 @@
+.outer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../src/images/BlueBg.jpg);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign_up {
+    width: 50vw;
+    background-color: white;
+    padding: 3.5vh 0;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .sign_up h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+  
+  }
+  
+  .sign_up label {
+    font-size: 1.2rem;
+    margin-left: 4vw;
+  }
+  
+  .sign_up input, .sign_up select ,#profileImage{
+    
+   padding: 0.1rem 0.5rem;
+    font-size: 1rem;
+    margin: 1.1vh 4vw; 
+    height: 1.9rem;
+    border-radius: 8px;
+    border: 1px solid rgba(51, 88, 209, 0.3);
+    box-shadow: 0 2px 4px rgba(51, 88, 209, 0.2);
+    transition: box-shadow 0.3s ease;
+    width: 65%;
+  }
+  .sign_up select{width: 70%;}
+  #profileImage{
+    
+    
+    padding-top: 1vh;
+  }
+  .sign_up input:focus, .sign_up select:focus {
+    box-shadow: 0 4px 8px rgba(51, 88, 209, 0.2), 0 8px 16px rgba(21, 63, 191, 0.3);
+    outline: none;
+  }
+  
+  .btn_signin {
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(11, 161, 211);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn_signin:hover {
+    transform: translateY(-3px);
+    background-color: rgb(16, 27, 227);
+  }
+  
+  .link_style {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .already {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .sign_up {
+      width: 70vw;
+      top: 10vh;
+      left: 10vw;
+    }
+  
+    .sign_up h1 {
+      font-size: 2rem;
+    }
+  
+    .sign_up input, .sign_up select {
+      height: 1.8rem;
+    }
+  
+    .btn_signin {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sign_up {
+      width: 90vw;
+      padding: 10%;
+      top: 5vh;
+      left: 5vw;
+    }
+  
+    .sign_up h1 {
+      font-size: 1.5rem;
+    }
+  
+    .sign_up input, .sign_up select {
+      height: 1.5rem;
+    }
+  
+    .btn_signin {
+      font-size: 1rem;
+    }
+  }
+  

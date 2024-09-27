@@ -1,0 +1,17 @@
+import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage';const auth = getAuth(app);
+const db = getFirestore(app);const imgdb = getStorage(app)
+const [isbn,setIsbn] = useState('');const [title, setTitle] = useState('');
+const [author, setAuthor] = useState('');const [publisher,setPublisher] = useState('');
+const [year,setYear] = useState('');const [genre,setGenre] = useState('');
+const [quantity,setQuantity] = useState('');const [bookimg,setBookimg] = useState(null);
+const bookref = collection(db, 'bookdata');const addBook = async() => {
+ const imgRef = ref(imgdb, `uploads/books/${Date.now()}-${bookimg.name}`); const uploadResult = await uploadBytes(imgRef, bookimg);
+      const downloadURL = await getDownloadURL(uploadResult.ref);
+ await addDoc(bookref,{  ISBN:isbn,
+        Title:title,        Author:author,
+        Publisher:publisher,        Year:year
+        Genre:genre,        Quantity:quantiy,
+        bookimg:downloadURL  
+ })
+}

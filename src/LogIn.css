@@ -1,0 +1,103 @@
+.outer-login{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    /* background-color: yellow */
+}
+.log_in {
+    height:75vh;
+    width: 30vw;
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+   
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+.log_in h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.log_in p {
+    font-size: 1.25rem;
+}
+
+.EmailControl, .PasswordControl {
+    margin: 1.3rem auto;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 95%;
+    border-radius: 8px;
+    height: 2rem;
+    border: 1px solid rgba(51, 88, 209, 0.3);
+    box-shadow: 0 2px 4px rgba(51, 88, 209, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.EmailControl:focus, .PasswordControl:focus {
+    box-shadow: 0 4px 8px rgba(51, 88, 209, 0.2), 0 8px 16px rgba(21, 63, 191, 0.3);
+    outline: none;
+}
+
+.btn_sub {
+    background-color: rgb(16, 27, 227);
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_sub:hover {
+    background-color: rgb(11, 161, 211);
+    transform: translateY(-3px);
+}
+
+.log_in span {
+    font-size: 1.4rem;
+    color: rgb(11, 161, 211);
+    text-align: center;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.google {
+    height: 8vh; /* Increased height slightly for better visibility */
+    width: 8vh; /* Increased width slightly for better visibility */
+    background-image: url(images/gaand.png);
+    background-size: contain; /* Ensure the image scales proportionally */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    border: none; /* Remove default button border */
+    border-radius: 50%; /* Add rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1); /* Light bluish shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    background-color: #f0f4ff; /* Light blue background color */
+    position: absolute;
+    bottom: 1%;
+    left: 45%;
+    /* margin: 1rem; */
+    
+}
+
+/* Add hover effect */
+.google:hover {
+    transform: translateY(-2px); /* Slightly lift the button */
+    box-shadow: 0 6px 10px rgba(0, 123, 255, 0.2); /* Enhance shadow on hover */
+    background-color: #e0e8ff; /* Slightly darker background on hover */
+}
